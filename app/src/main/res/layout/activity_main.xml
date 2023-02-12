@@ -46,7 +46,9 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="28dp"
         android:ems="10"
+        android:hint="0.0"
         android:inputType="numberDecimal"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/tvC"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,7 +60,9 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="40dp"
         android:ems="10"
+        android:hint="0.0"
         android:inputType="numberDecimal"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/etK"
         app:layout_constraintStart_toEndOf="@+id/tvF"
         app:layout_constraintTop_toBottomOf="@+id/etC" />
@@ -70,7 +74,9 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:ems="10"
+        android:hint="0.0"
         android:inputType="numberDecimal"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/tvK"
         app:layout_constraintTop_toBottomOf="@+id/etF" />
 
