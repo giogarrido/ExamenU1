@@ -43,12 +43,12 @@ class MainActivity : AppCompatActivity() {
             if(!celsius.text.isEmpty()){
                 GC= celsius.text.toString().toDouble()
                 GF= GC*1.8+32
-                fahrenheit.setText(String.format("%.2f",GC))
+                fahrenheit.setText(String.format("%.2f",GF))
                 kelvin.setText("")
             }else if (!kelvin.text.isEmpty()){
                 GK = kelvin.text.toString().toDouble()
-                GF= ((9(GK-273.15))/5)+32
-                fahrenheit.setText(String.format("%.2f",GC))
+                GF= ((9*(GK-273.15))/5)+32
+                fahrenheit.setText(String.format("%.2f",GF))
                 celsius.setText("")
 
             }else{
@@ -59,13 +59,13 @@ class MainActivity : AppCompatActivity() {
         convertirKelvin.setOnClickListener {
             if(!fahrenheit.text.isEmpty()){
                 GF= fahrenheit.text.toString().toDouble()
-                GK= ((5(GF-32))/9)+273.15
-                kelvin.setText(String.format("%.2f",GC))
+                GK= ((5*(GF-32))/9)+273.15
+                kelvin.setText(String.format("%.2f",GK))
                 celsius.setText("")
             }else if (!celsius.text.isEmpty()){
                 GC= celsius.text.toString().toDouble()
                 GK= GC+273.15
-                kelvin.setText(String.format("%.2f",GC))
+                kelvin.setText(String.format("%.2f",GK))
                 fahrenheit.setText("")
 
             }else{
